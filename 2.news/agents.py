@@ -5,6 +5,7 @@ load_dotenv()
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
 
+os.environ["OPENAI_MODEL_NAME"] = "gpt-3.5-turbo"
 
 ## call the gemini models
 llm=ChatGoogleGenerativeAI(model="vertex_ai/gemini-1.5-pro",
